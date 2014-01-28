@@ -195,7 +195,7 @@ class InteractiveInterface(object):
         name_match_result = re.match(rule_name, name)
         if name_match_result and name_match_result.group() == name:
             if utils.isAllPattern(rule_name):
-                if self._isInBlacklist(rule.gateway, type, name, node):
+                if self._isInBlacklist(rule.gateway, rule.rule.type, name, node):
                     return False
             if rule.rule.node:
                 node_match_result = re.match(rule.rule.node, node)
@@ -279,14 +279,14 @@ class InteractiveInterface(object):
         self._lock.release()
         return matched_registration
 
-    def _isInBlacklist(self, gateway, type, name, node):
+    def _isInBlacklist(self, gateway, connection_type, name, node):
         '''
           Check if a particular connection is in the blacklist. Use this to
           filter connections from the flip_all command.
 
           @todo move to utils - should be shared with the public interface.
         '''
-        for blacklist_rule in self._blacklist[gateway][type]:
+        for blacklist_rule in self._blacklist[gateway][connection_type]:
             name_match_result = re.match(blacklist_rule.name, name)
             if name_match_result and name_match_result.group() == name:
                 if blacklist_rule.node:
