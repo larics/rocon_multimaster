@@ -16,6 +16,6 @@
     <param name="hub_uri" value="http://$(arg hub_uri):$(arg hub_port)" />
     <param name="name" value="$(arg gateway_name)" />
     <rosparam param="firewall">false</rosparam>
-    <!--<rosparam param="pull_all">true</rosparam>>
+    <!--<rosparam param="pull_all">true</rosparam>-->
   </node>
 </launch>
