@@ -80,6 +80,33 @@ default_flips:
      name: /Delta/vehInfo
      node: None
      type: publisher
+
+ - gateway: alpha_gateway
+   rule:
+     name: /Delta/remReqSrv
+     node: None
+     type: service
+ - gateway: bravo_gateway
+   rule:
+     name: /Delta/remReqSrv
+     node: None
+     type: service
+ - gateway: charlie_gateway
+   rule:
+     name: /Delta/remReqSrv
+     node: None
+     type: service
+ - gateway: echo_gateway
+   rule:
+     name: /Delta/remReqSrv
+     node: None
+     type: service
+ - gateway: foxtrot_gateway
+   rule:
+     name: /Delta/remReqSrv
+     node: None
+     type: service
+
 #    - gateway: pirate_gateway       # flip_all to this gateway, blacklist is only the default_blacklist 
 #    - gateway: pirate_.*            # regex can also be used 
 #    - gateway: pirate_gateway       # flip to a specific rule to a gateway
