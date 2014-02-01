@@ -49,38 +49,37 @@ firewall: true
 #      type: subscriber
 #
 #default_flips: 
-default_flips: 
-	- gateway: alpha_gateway
-		rule:
-			name: /Bravo/vehInfo
-			node: None
-			type: publisher
-	- gateway: charlie_gateway
-		rule:
-			name: /Bravo/vehInfo
-			node: None
-			type: publisher
-	- gateway: delta_gateway
-		rule:
-			name: /Bravo/vehInfo
-			node: None
-			type: publisher
-	- gateway: echo_gateway
-		rule:
-			name: /Bravo/vehInfo
-			node: None
-			type: publisher
-	- gateway: foxtrot_gateway
-		rule:
-			name: /Bravo/vehInfo
-			node: None
-			type: publisher
-
-	- gateway: master_gateway
-		rule:
-			name: /Bravo/vehInfo
-			node: None
-			type: publisher
+default_flips:
+ - gateway: alpha_gateway
+   rule:
+     name: /Bravo/vehInfo
+     node: None
+     type: publisher
+ - gateway: charlie_gateway
+   rule:
+     name: /Bravo/vehInfo
+     node: None
+     type: publisher
+ - gateway: delta_gateway
+   rule:
+     name: /Bravo/vehInfo
+     node: None
+     type: publisher
+ - gateway: echo_gateway
+   rule:
+     name: /Bravo/vehInfo
+     node: None
+     type: publisher
+ - gateway: foxtrot_gateway
+   rule:
+     name: /Bravo/vehInfo
+     node: None
+     type: publisher
+ - gateway: master_gateway
+   rule:
+     name: /Bravo/vehInfo
+     node: None
+     type: publisher
 
 
 

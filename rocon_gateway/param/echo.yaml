@@ -49,38 +49,37 @@ firewall: true
 #      type: subscriber
 #
 #default_flips: 
-default_flips: 
-	- gateway: alpha_gateway
-		rule:
-			name: /Echo/vehInfo
-			node: None
-			type: publisher
-	- gateway: bravo_gateway
-		rule:
-			name: /Echo/vehInfo
-			node: None
-			type: publisher
-	- gateway: charlie_gateway
-		rule:
-			name: /Echo/vehInfo
-			node: None
-			type: publisher
-	- gateway: delta_gateway
-		rule:
-			name: /Echo/vehInfo
-			node: None
-			type: publisher
-	- gateway: foxtrot_gateway
-		rule:
-			name: /Echo/vehInfo
-			node: None
-			type: publisher
-
-	- gateway: master_gateway
-		rule:
-			name: /Echo/vehInfo
-			node: None
-			type: publisher
+default_flips:
+ - gateway: alpha_gateway
+   rule:
+     name: /Echo/vehInfo
+     node: None
+     type: publisher
+ - gateway: bravo_gateway
+   rule:
+     name: /Echo/vehInfo
+     node: None
+     type: publisher
+ - gateway: charlie_gateway
+   rule:
+     name: /Echo/vehInfo
+     node: None
+     type: publisher
+ - gateway: delta_gateway
+   rule:
+     name: /Echo/vehInfo
+     node: None
+     type: publisher
+ - gateway: foxtrot_gateway
+   rule:
+     name: /Echo/vehInfo
+     node: None
+     type: publisher
+ - gateway: master_gateway
+   rule:
+     name: /Echo/vehInfo
+     node: None
+     type: publisher
 
 #    - gateway: pirate_gateway       # flip_all to this gateway, blacklist is only the default_blacklist 
 #    - gateway: pirate_.*            # regex can also be used 
