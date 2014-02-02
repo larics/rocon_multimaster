@@ -76,6 +76,8 @@ default_flips:
      node: None
      type: publisher
 
+ - gateway: master_gateway
+
  - gateway: alpha_gateway
    rule:
      name: /Echo/remReqSrv

@@ -75,11 +75,8 @@ default_flips:
      name: /Bravo/vehInfo
      node: None
      type: publisher
+
  - gateway: master_gateway
-   rule:
-     name: /Bravo/vehInfo
-     node: None
-     type: publisher
 
  - gateway: alpha_gateway
    rule:
