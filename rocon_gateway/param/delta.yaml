@@ -90,7 +90,7 @@ default_flips:
 
  - gateway: master_gateway
    rule:
-     name: /Delta/simPose
+     name: /Delta/pose
      node: None
      type: publisher
 

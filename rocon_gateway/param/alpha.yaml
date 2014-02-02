@@ -89,7 +89,7 @@ default_flips:
 
  - gateway: master_gateway
    rule:
-     name: /Alfa/simPose
+     name: /Alfa/pose
      node: None
      type: publisher
 

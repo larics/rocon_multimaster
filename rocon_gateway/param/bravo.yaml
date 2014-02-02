@@ -90,7 +90,7 @@ default_flips:
 
  - gateway: master_gateway
    rule:
-     name: /Bravo/simPose
+     name: /Bravo/pose
      node: None
      type: publisher
 
