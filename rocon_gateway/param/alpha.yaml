@@ -76,6 +76,22 @@ default_flips:
      type: publisher
 
  - gateway: master_gateway
+   rule:
+     name: /Alfa/pathToGoal
+     node: None
+     type: publisher
+
+ - gateway: master_gateway
+   rule:
+     name: /Alfa/collCells
+     node: None
+     type: publisher
+
+ - gateway: master_gateway
+   rule:
+     name: /Alfa/simPose
+     node: None
+     type: publisher
 
  - gateway: bravo_gateway
    rule:
