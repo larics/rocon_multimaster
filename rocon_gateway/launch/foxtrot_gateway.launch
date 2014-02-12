@@ -10,7 +10,7 @@
   <!--node ns="zeroconf" pkg="zeroconf_avahi" type="zeroconf" name="zeroconf"  output="screen"/>-->
 
   <node pkg="rocon_gateway" type="gateway.py" name="gateway" output="screen">
-    <rosparam command="load" file="$(find rocon_gateway)/param/default.yaml" />
+    <rosparam command="load" file="$(find rocon_gateway)/param/default_blacklist.yaml" />
     <rosparam command="load" file="$(find rocon_gateway)/param/foxtrot.yaml" />
     <param name="hub_whitelist" value="[$(arg hub_name)]" />
     <param name="hub_uri" value="http://$(arg hub_uri):$(arg hub_port)" />
